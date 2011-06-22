@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.jboss:jboss-common-core:2.2.8.GA">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jboss/jboss-common-core/2.2.8.GA/jboss-common-core-2.2.8.GA.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jboss/jboss-common-core/2.2.8.GA/jboss-common-core-2.2.8.GA-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jboss/jboss-common-core/2.2.8.GA/jboss-common-core-2.2.8.GA-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

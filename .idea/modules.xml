@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/plugins/coherence3/plugin-coherence3.iml" filepath="$PROJECT_DIR$/plugins/coherence3/plugin-coherence3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/plugins/ehcache17/plugin-ehcache17.iml" filepath="$PROJECT_DIR$/plugins/ehcache17/plugin-ehcache17.iml" />
+      <module fileurl="file://$PROJECT_DIR$/plugins/infinispan4/plugin-infinispan4.iml" filepath="$PROJECT_DIR$/plugins/infinispan4/plugin-infinispan4.iml" group="radargun-aggregator and modules" />
+      <module fileurl="file://$PROJECT_DIR$/plugins/jbosscache2/plugin-jbosscache2.iml" filepath="$PROJECT_DIR$/plugins/jbosscache2/plugin-jbosscache2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/plugins/jbosscache3/plugin-jbosscache3.iml" filepath="$PROJECT_DIR$/plugins/jbosscache3/plugin-jbosscache3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/plugins/terracotta3/plugin-terracotta3.iml" filepath="$PROJECT_DIR$/plugins/terracotta3/plugin-terracotta3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/radargun-aggregator.iml" filepath="$PROJECT_DIR$/radargun-aggregator.iml" group="radargun-aggregator and modules" />
+      <module fileurl="file://$PROJECT_DIR$/framework/radargun-framework.iml" filepath="$PROJECT_DIR$/framework/radargun-framework.iml" group="radargun-aggregator and modules" />
+      <module fileurl="file://$PROJECT_DIR$/parent/radargun-parent.iml" filepath="$PROJECT_DIR$/parent/radargun-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/plugins/radargun-plugin-parent.iml" filepath="$PROJECT_DIR$/plugins/radargun-plugin-parent.iml" />
+    </modules>
+  </component>
+</project>
+

@@ -1,0 +1,42 @@
+<bench-config>
+
+    <master bindAddress="${127.0.0.1:master.address}" port="${2103:master.port}"/>
+
+    <benchmark initSize="${2:Islaves}" maxSize="${2:slaves}" increment="2">
+        <DestroyWrapper runOnAllSlaves="true"/>
+        <StartCluster staggerSlaveStartup="true" delayAfterFirstSlaveStarts="5000" delayBetweenStartingSlaves = "5000"/>
+        <ClusterValidation partialReplication="true"/>
+        <Warmup operationCount="1000" numWarehouse="1"/>
+        <!--
+          This will average to 10000 requests per thread, although a work-stealing pattern is used so some threads may
+          do more work than others.
+        -->
+        <WebSessionBenchmark
+                opsCountStatusLog="500"
+                numOfThreads="2"
+                perThreadSimulTime="60000000000"
+                lambda="0.0"
+                paymentWeight="45.0"
+                orderStatusWeight="5.0"
+                cLastMask="255"
+                olIdMask="8191"
+                cIdMask="1023"/>
+
+        <CsvReportGeneration/>
+    </benchmark>
+
+    <products>
+        <infinispan4>
+            <config name="ReplSync.xml"/>
+<!--            <config name="part-repl.xml"/>-->
+        </infinispan4>
+    </products>
+
+    <reports>
+        <report name="Report">
+            <item product="infinispan4" config="ReplSync.xml"/>
+<!--            <item product="infinispan4" config="part-repl.xml"/>-->
+        </report>
+    </reports>
+
+</bench-config>
