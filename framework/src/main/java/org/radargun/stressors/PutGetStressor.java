@@ -125,7 +125,7 @@ public class PutGetStressor implements CacheWrapperStressor {
 
             stressers = executeOperations();
         } catch (Exception e) {
-            log.info("***** Eccezione nel metodo PutGetStressor.stress durante la chiamata a  executeOperations()*****");
+            log.info("*****Exception in PutGetStressor.stress() during executeOperations()*****");
             throw new RuntimeException(e);
         }
         log.info("stressers ends");
@@ -796,7 +796,7 @@ public class PutGetStressor implements CacheWrapperStressor {
 
 
         }
-        //think time = numero di tx medie al secondo
+        
         public void run(){
 
             long time;
@@ -833,7 +833,7 @@ public class PutGetStressor implements CacheWrapperStressor {
                     log.error("»»»»»»INTERRUPTED_EXCEPTION«««««««");
                 }
                 catch(IllegalStateException il){
-                    log.error("»»»»»»»CODA PIENA«««««««««");
+                    log.error("»»»»»»»FULL QUEUE«««««««««");
 
                 }
             }
