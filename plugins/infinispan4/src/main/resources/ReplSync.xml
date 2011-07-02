@@ -18,11 +18,7 @@
 	<jmxStatistics enabled="true"/>
       <clustering mode="r">
          <sync replTimeout="15000"/>
-		 <stateRetrieval
-                    timeout="20000"
-                    fetchInMemoryState="false"
-                    alwaysProvideInMemoryState="false"
-                    />
+		 <stateRetrieval timeout="20000" fetchInMemoryState="false" alwaysProvideInMemoryState="false"/>
       </clustering>
    </default>
 </infinispan>
